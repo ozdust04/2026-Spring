@@ -1,0 +1,71 @@
+Build a web magazine based on the attached PRD. Important: All UI elements, labels, and menus must be in Korean as specified, but follow the English technical instructions for the structure and features.
+
+🎭 [PRD] Single-Author Theater Web Magazine: 구경꾼 (The Spectator)
+1. Project Core Identity
+Service Name: 구경꾼 (Display this in Korean)
+
+Slogan: 연극을 보고, 듣고, 기록하기 (Display this in Korean)
+
+Mission: A professional web magazine providing deep-dive reviews, industry news, and play curations for theater enthusiasts.
+
+Language Requirement: The entire User Interface (UI), menus, buttons, and labels must be in Korean.
+
+2. Visual & UI/UX Requirements (English Instructions)
+Concept: A hybrid of "Classic Magazine" and "Modern Minimalist."
+
+Color Palette: Clean white background (#FFFFFF) with high-contrast black text (#000000).
+
+Typography: Use a sophisticated Serif font for main articles to give a "printed magazine" feel, and a clean Sans-serif for navigation.
+
+Header Layout:
+
+Center-aligned logo "구경꾼" at the top.
+
+Navigation menu below the logo with 4 categories: 리뷰(Review), 뉴스(News), 피처(Feature), 큐레이션(Curation).
+
+Home Screen:
+
+Show a grid-style preview of the 2-3 most recent articles for each category.
+
+Include a simple search bar at the top right for title-based searches (Label: "검색").
+
+3. Section Specifics (UI Labels in Korean)
+3.1 리뷰 (Review)
+List View: Each item must show a Thumbnail, Title, Star Rating (별점), and 3 Keyword Tags (키워드).
+
+Article View: Must include a dedicated "Performance Info" (공연 정보) box containing: Title, Venue, and Period.
+
+3.2 뉴스 (News)
+List-style layout for domestic and international theater industry news.
+
+3.3 피처 (Feature)
+Typography-focused layout for long-form essays, critiques, and editorials.
+
+3.4 큐레이션 (Curation)
+Focused on introducing overseas plays. Must include a "Book Info" (도서 정보) section for Author and Original Title.
+
+4. Admin & CMS Requirements (English Instructions)
+Hybrid Writing Form: Create a custom editor for the admin.
+
+Fixed Meta-fields (Input fields):
+
+Star Rating (1-5 stars) for Reviews.
+
+Tag inputs (max 3) for Keywords.
+
+Structured fields for "Performance Info" and "Book Info."
+
+Flexible Body Editor: A Rich Text Editor that supports:
+
+Free text formatting and alignment.
+
+Image and Video (YouTube/Vimeo) embedding.
+
+Customizable font sizes for subheaders.
+
+5. Technical Instructions for AI
+Responsive Design: Ensure the magazine is mobile-friendly with a focus on readability.
+
+Search Logic: Implement a simple client-side or server-side search that matches the "Title" of the articles.
+
+Navigation: All category links must filter and display the respective content types correctly.
