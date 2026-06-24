@@ -1,0 +1,26 @@
+# Role & Goal
+You are an expert Full-Stack Engineer and UI/UX Designer. Your goal is to implement a highly sophisticated, state-driven **Premium Paywall (Membership Restriction) System** for the "Curation (큐레이션)" section of the "Gukyeongkkun" Web Magazine. This feature must demonstrate high technical complexity, completeness, and commercial viability for a university final project evaluation.
+
+## 1. Targeted Section & Logic (Authentication State)
+- **Target**: Apply this Paywall system **ONLY** to the article detail pages within the **"Curation (큐레이션)"** section.
+- **State-Driven Access Control**:
+  - If a user is **Logged In** (simulated via local state/session or Admin mode), the full article content must be completely visible without any restrictions.
+  - If a user is **Not Logged In / Guest**, the paywall must trigger immediately, restricting access to the latter half of the article.
+
+## 2. Paywall UI/UX Design (Minimalist Blur Style)
+- **Visual Effect**: Cut the article text exactly at the 50% mark. From that point downward, apply a smooth, elegant **gradient blur effect (fade-to-transparent or backdrop-blur)** over the text so it becomes unreadable but visually hints that content continues below.
+- **Premium Call-To-Action (CTA) Box**: Centered directly over the blurred area, display a refined, clean premium card matching the magazine's aesthetic.
+- **Copywriting (Korean)**:
+  - **Title**: "Premium Exclusive"
+  - **Description**: "구경꾼 멤버십 회원에게만 공개되는 콘텐츠입니다. 지금 가입하고 모든 제한을 해제하세요."
+- **Action Button**: A prominent, stylish button labeled **"월 4,900원에 구독하기 (Subscribe for 4,900 KRW/month)"**.
+
+## 3. Interactive Mock Payment Process (One-Click Pass)
+When a user clicks the "월 4,900원에 구독하기" button, trigger the following interactive flow:
+1. **Mock Payment Gateway Modal**: Pop up a sleek modal window that mimics a real PG payment gateway screen (e.g., Toss Payments style). It should show the price (4,900 KRW) and a mock "결제하기 (Pay Now)" button.
+2. **Success Trigger**: Clicking the mock "결제하기" button should trigger a brief 1-second loading spinner ("Processing payment...").
+3. **Instant Access Grant**: Once processed, show a success toast or alert ("구독이 완료되었습니다!"), close the modal, update the local user state to 'Subscribed/Premium Member', and **instantly lift the blur effect** to reveal 100% of the article smoothly.
+
+## 4. Technical Completeness for Evaluation
+- **Language**: Ensure all user-facing UI labels, modals, text prompts, and buttons are presented in crisp, natural **Korean**.
+- **Mock State Toggle**: For demonstration purposes during presentation, add a small, subtle floating toggle button at the corner of the screen for the developer/professor to easily switch between "Guest Mode (Paywall Active)" and "Premium Member Mode (Paywall Unlocked)".
