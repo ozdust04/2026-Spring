@@ -1,0 +1,28 @@
+# Role & Goal
+You are an expert Frontend Engineer. Your goal is to upgrade the existing Admin CMS (`/admin`) of the "Gukyeongkkun(구경꾼)" Web Magazine by adding a comprehensive **"Traffic & Inflow Analytics Dashboard"** tab. This dashboard will help the solopreneur operator analyze article performance and make data-driven decisions.
+
+## 1. UI/UX & Layout Instruction
+- **Tab Integration**: Add a new tab named "통계/분석 (Analytics)" alongside the existing article management tabs in the `/admin` view.
+- **Design System**: Maintain the classic yet modern aesthetic (clean white/beige background, sharp dark text, refined typography).
+- **Visualization**: Use a modern charting library (like `Recharts` or Lucide icons) to create beautiful, responsive, and scannable charts.
+
+## 2. Key Dashboard Features & Components
+### A. Overview Cards (Key Metrics)
+Display 4 summary cards at the top with subtle hover effects:
+1. **총 조회수 (Total Views)**: e.g., "12,450 (+12% vs last week)"
+2. **평균 체류 시간 (Avg. Duration)**: e.g., "3m 45s"
+3. **가장 인기가 높은 섹션 (Top Section)**: e.g., "Review (리뷰)"
+4. **이번 달 순 방문자 (Monthly UV)**: e.g., "4,200"
+
+### B. Traffic & Inflow Analytics (Charts)
+- **Inflow Routes (유입 경로 분석)**: A Pie Chart or Donut Chart showcasing where readers come from.
+  - Mock Data Categories: `네이버 블로그 (Naver Blog)`, `X (Twitter)`, `인스타그램 (Instagram)`, `Direct (직접 유입)`, `기타 (Others)`.
+- **Weekly Traffic Trend (주간 트래픽 추이)**: An Elegant Line Chart showing daily views for the past 7 days.
+
+### C. Top Performing Articles Table
+A clean, sortable table showing the top 5 most viewed articles with columns:
+- Rank | Section Tag | Article Title | Views | Bounce Rate
+
+## 3. Localization & Technical Requirements
+- **Language**: All UI labels, titles, chart legends, and mock data text must be written in **Korean** (e.g., "유입 경로별 분석", "조회수 높은 기사").
+- **State Management**: Use mock data for now, but ensure the state and components are structured so they can easily fetch real API data or Google Analytics tracking data in the future.
